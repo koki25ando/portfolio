@@ -4,18 +4,55 @@ body, html{ height: 100%;}
 body {
   margin: 0;
   font-size: 20px;
+  text-align: center;
 }
 
 /* nav editting starts*/
 
-nav{
-  background-color: grey;
+nav {
+  background-color: #333;
   height: 10%;
   padding-left: 1%;
+  color: white;
 }
 
-.menu_content{
-  display: inline;
+#nav_title {
+float:left;
+width: 15%;
+height:100%;
+vertical-align: middle;
+position: relative;
+}
+
+nav a{
+  position:relative;
+  top: 30%;
+}
+
+.nav_content{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav_content:hover{
+  cursor: pointer;
+  color: red;
+  opacity:.6;
+}
+
+#menu {
+  float: right;
+  width:10%;
+  height:100%;
+  margin-right: 1%;
+  position: relative;
+  display: inline-block;
+}
+
+#menu:hover{
+  background: red;
+  color: black;
+  cursor: pointer;
 }
 
 /* nav editting ends*/
@@ -23,7 +60,6 @@ nav{
 /* header editting starts*/
 
 header{
-  background-color: pink;
   background-image: url('https://s3-ap-southeast-2.amazonaws.com/koki25ando/andojump1.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -34,11 +70,11 @@ header{
 
 #name_introduction{
   text-align: center;
-  vertical-align: center;
   font-family: sans-serif;
+  font-size: 2em;
   letter-spacing: 5px;
   font-weight: bold;
-  margin:0;
+  margin: 0;
 }
 
 /* header editting ends*/
@@ -48,9 +84,9 @@ header{
   display:box;
   float: clear;
   text-align: left;
-  background: limegreen;
-  width: 80%;
-  height:200px;
+  background: grey;
+  width: 70%;
+  height: 30%;
   clear:both;
   margin: 0 auto;
 }
@@ -74,7 +110,7 @@ header{
   background-color: grey;
   margin:0 auto;
   display: table;
-  width:100%;
+  width:90%;
 }
 
 .row{
@@ -102,3 +138,25 @@ header{
 }
 
 /* table editting ends*/
+
+/* footer editting starts*/
+
+footer{
+  height: 10%;
+}
+
+.follow-me{
+  display: inline;
+}
+
+.follow-me li {
+  display: inline;
+  font-size: 2em;
+  margin-right: 1%;
+  margin-left: 1%;
+}
+
+.follow-me li:hover{
+  opacity: .5;
+}
+/* footer editting ends*/
